@@ -15,10 +15,9 @@ public:
 
     String(const String& str) : len(str.len) {
         
-        data = new char[len + 1];
-        if (NULL ==  data) {
-            //TODO
-        }    
+        /*fail, then throw exception : bad_alloc*/
+        data = new char[len + 1]; 
+        
         strcpy(this->data, str.data);
     }
 
@@ -32,14 +31,10 @@ public:
     String(const char* ch) {
 
         len = strlen(ch);
-        data = new char[len + 1];
         
-        if (data == NULL) {
-
-        }
+        data = new char[len + 1];
 
         strcpy(this->data, ch);
-
     };
 
     String& operator = (String&& str) {
@@ -56,7 +51,7 @@ public:
 
         str.data = NULL;
         str.len = 0;
-
+        
         return *this;
     }
 
@@ -71,13 +66,8 @@ public:
         delete[] data;
 
         data = new char[str.len + 1];
-        
-        if (data == NULL) {
-
-        }
 
         len = str.len;
-        
         strcpy(this->data, str.data);
 
         return *this;
