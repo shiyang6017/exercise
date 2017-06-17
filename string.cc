@@ -1,25 +1,25 @@
 #include <iostream>
 #include <string.h>
+
 #include <vector>
 using namespace std;
 
 class String {
+     friend ostream& operator << (ostream&, const String&);
 public:
-    friend ostream& operator << (ostream& os, const String& str);
-
     String(): data(NULL), len(0) { }
 
     virtual ~String() {
-        if (data) {
-            delete[] data;
-        }
+        delete[] data;
     }
 
     String(const String& str) : len(str.len) {
+        
         data = new char[len + 1];
-        for (int i = 0; i < len; ++i) {
-            data[i] = str.data[i];
-        }
+        if (NULL ==  data) {
+            //TODO
+        }    
+        strcpy(this->data, str.data);
     }
 
     String(String&& str) {
@@ -33,16 +33,23 @@ public:
 
         len = strlen(ch);
         data = new char[len + 1];
+        
+        if (data == NULL) {
 
-        for (int i = 0; i <= len; ++i) {
-            data[i] = ch[i];
         }
+
+        strcpy(this->data, ch);
+
     };
 
     String& operator = (String&& str) {
-        if (data) {
-            delete[] data;
+
+        /*easy to forget*/
+        if (&str == this) {
+            return *this;
         }
+
+        delete[] data;
 
         data = str.data;
         len = str.len;
@@ -54,15 +61,24 @@ public:
     }
 
     String& operator = (const String& str) {
+        
+        /*easy to forget*/
 
-        if (data) {
-            delete[] data;
+        if (&str == this) {
+            return *this;
         }
+
+        delete[] data;
+
         data = new char[str.len + 1];
-        len = str.len;
-        for (int i = 0; i <= len; ++i) {
-            data[i] = str.data[i];
+        
+        if (data == NULL) {
+
         }
+
+        len = str.len;
+        
+        strcpy(this->data, str.data);
 
         return *this;
     }
@@ -83,19 +99,17 @@ private:
     size_t len;
 };
 
-ostream& operator << (ostream& os, const String& str) {
+inline ostream& operator << (ostream& os, const String& str) {
     os << str.data;
     return  os;
 }
 
-String baz() {
-    String ret("hello world");
-    return ret;
+
+
+void testString() {
+
 }
 
 int main() {
-    string a = "0123456";
-    a[0] = 'a';
-    cout << a << endl;
     return 0;
 }
