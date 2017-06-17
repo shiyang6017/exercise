@@ -1,105 +1,38 @@
-#include <iostream>
-#include <string.h>
+#include "string.h"
+using namespace exercise;
 
-#include <vector>
-using namespace std;
+String& String::operator = (String&& str) {
 
-class String {
-     friend ostream& operator << (ostream&, const String&);
-public:
-    String(): data(NULL), len(0) { }
-
-    virtual ~String() {
-        delete[] data;
-    }
-
-    String(const String& str) : len(str.len) {
-        
-        /*fail, then throw exception : bad_alloc*/
-        data = new char[len + 1]; 
-        
-        strcpy(this->data, str.data);
-    }
-
-    String(String&& str) {
-        data = str.data;
-        len = str.len;
-        str.len = 0;
-        str.data = NULL;
-    }
-
-    String(const char* ch) {
-
-        len = strlen(ch);
-        
-        data = new char[len + 1];
-
-        strcpy(this->data, ch);
-    };
-
-    String& operator = (String&& str) {
-
-        /*easy to forget*/
-        if (&str == this) {
-            return *this;
-        }
-
-        delete[] data;
-
-        data = str.data;
-        len = str.len;
-
-        str.data = NULL;
-        str.len = 0;
-        
+    /*easy to forget*/
+    if (&str == this) {
         return *this;
     }
 
-    String& operator = (const String& str) {
-        
-        /*easy to forget*/
+    delete[] data;
 
-        if (&str == this) {
-            return *this;
-        }
+    data = str.data;
+    len = str.len;
 
-        delete[] data;
+    str.data = NULL;
+    str.len = 0;
 
-        data = new char[str.len + 1];
+    return *this;
+}
 
-        len = str.len;
-        strcpy(this->data, str.data);
+String& String::operator = (const String& str) {
 
+    /*easy to forget*/
+
+    if (&str == this) {
         return *this;
     }
 
-    const char& operator[](int idx) const {
-        return data[idx];
-    }
+    delete[] data;
 
-    char& operator[](int idx) {
-        return const_cast<char&>
-               (
-                   static_cast<const String&>(*this)[idx]
-               );
-    }
+    data = new char[str.len + 1];
 
-private:
-    char* data;
-    size_t len;
-};
+    len = str.len;
+    strcpy(this->data, str.data);
 
-inline ostream& operator << (ostream& os, const String& str) {
-    os << str.data;
-    return  os;
-}
-
-
-
-void testString() {
-
-}
-
-int main() {
-    return 0;
+    return *this;
 }
