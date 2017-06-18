@@ -7,7 +7,7 @@
 
 namespace exercise {
 
-/*use strategy model to instead virtual function*/
+/*use strategy model to replace virtual function*/
 
 class Character;
 
