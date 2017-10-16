@@ -6,7 +6,7 @@
 using namespace std;
 using namespace exercise;
 
-int main() {
+void main() {
     String str1("01234");
     String str2("abcde");
     swap(str1, str2);

@@ -11,7 +11,8 @@ namespace exercise {
 
 class Character;
 
-struct Actions {
+class Actions {
+public:
     static void defaultAct(const Character& ch);
     static void kill(const Character& ch);
     static void help(const Character& ch);
@@ -56,13 +57,13 @@ public:
 
 
 void Actions::defaultAct(const Character& chr) {
-    std::cout << chr.getName() << " act" << std::endl;
+    std::cout << chr.getName() << " act normal" << std::endl;
 }
 void Actions::kill(const Character& chr) {
     std::cout << chr.getName() << " kill" << std::endl;
 }
 void Actions::help(const Character& chr) {
-    std::cout << chr.getName() << " help" << std::endl;
+    std::cout << chr.getName() << " save" << std::endl;
 }
 
 }

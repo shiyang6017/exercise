@@ -1,7 +1,7 @@
 #include "strategy.h"
 using namespace exercise;
 
-int main() {
+void main() {
     Character chr("default");
     Evil evil("Evil");
     Angel angel("Angel");

@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="exercise"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/shiyang/exercise/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/shiyang/exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/shiyang/exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/shiyang/exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/shiyang/exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/shiyang/exercise/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/shiyang/exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/shiyang/exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/shiyang/exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/shiyang/exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/shiyang/exercise/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/shiyang/exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/shiyang/exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/shiyang/exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/shiyang/exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="exercise">
+				<Option output="/home/shiyang/exercise/cmake-build-debug/exercise" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/shiyang/exercise/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/shiyang/exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 exercise"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/shiyang/exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/shiyang/exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/shiyang/exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="exercise/fast">
+				<Option output="/home/shiyang/exercise/cmake-build-debug/exercise" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/shiyang/exercise/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/shiyang/exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 exercise/fast"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/shiyang/exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/shiyang/exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/shiyang/exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/shiyang/exercise/boost/implicit_cast.cc">
+			<Option target="exercise"/>
+		</Unit>
+		<Unit filename="/home/shiyang/exercise/c++11/SFINAE.cc">
+			<Option target="exercise"/>
+		</Unit>
+		<Unit filename="/home/shiyang/exercise/c++11/final&amp;override.cc">
+			<Option target="exercise"/>
+		</Unit>
+		<Unit filename="/home/shiyang/exercise/c++11/function&amp;bind.cc">
+			<Option target="exercise"/>
+		</Unit>
+		<Unit filename="/home/shiyang/exercise/c++11/test.cc">
+			<Option target="exercise"/>
+		</Unit>
+		<Unit filename="/home/shiyang/exercise/c++11/vector_pair.cc">
+			<Option target="exercise"/>
+		</Unit>
+		<Unit filename="/home/shiyang/exercise/concurrency/concu.c">
+			<Option target="exercise"/>
+		</Unit>
+		<Unit filename="/home/shiyang/exercise/concurrency/definition.cc">
+			<Option target="exercise"/>
+		</Unit>
+		<Unit filename="/home/shiyang/exercise/concurrency/producer_comsumer.cpp">
+			<Option target="exercise"/>
+		</Unit>
+		<Unit filename="/home/shiyang/exercise/concurrency/question_1.cc">
+			<Option target="exercise"/>
+		</Unit>
+		<Unit filename="/home/shiyang/exercise/concurrency/question_2.cc">
+			<Option target="exercise"/>
+		</Unit>
+		<Unit filename="/home/shiyang/exercise/concurrency/rwlock.c">
+			<Option target="exercise"/>
+		</Unit>
+		<Unit filename="/home/shiyang/exercise/concurrency/rwlock.cc">
+			<Option target="exercise"/>
+		</Unit>
+		<Unit filename="/home/shiyang/exercise/concurrency/test.c">
+			<Option target="exercise"/>
+		</Unit>
+		<Unit filename="/home/shiyang/exercise/data_structure/ex_string.cc">
+			<Option target="exercise"/>
+		</Unit>
+		<Unit filename="/home/shiyang/exercise/data_structure/ex_string.h">
+			<Option target="exercise"/>
+		</Unit>
+		<Unit filename="/home/shiyang/exercise/data_structure/ex_string_test.cc">
+			<Option target="exercise"/>
+		</Unit>
+		<Unit filename="/home/shiyang/exercise/data_structure/ex_swap.h">
+			<Option target="exercise"/>
+		</Unit>
+		<Unit filename="/home/shiyang/exercise/data_structure/ex_swap_test.cc">
+			<Option target="exercise"/>
+		</Unit>
+		<Unit filename="/home/shiyang/exercise/debug-tools/gtest/TEST.cc">
+			<Option target="exercise"/>
+		</Unit>
+		<Unit filename="/home/shiyang/exercise/debug-tools/gtest/TEST_F.cc">
+			<Option target="exercise"/>
+		</Unit>
+		<Unit filename="/home/shiyang/exercise/debug-tools/gtest/TEST_P.cc">
+			<Option target="exercise"/>
+		</Unit>
+		<Unit filename="/home/shiyang/exercise/debug-tools/gtest/TYPED_TEST_P.cc">
+			<Option target="exercise"/>
+		</Unit>
+		<Unit filename="/home/shiyang/exercise/debug-tools/gtest/assert.cc">
+			<Option target="exercise"/>
+		</Unit>
+		<Unit filename="/home/shiyang/exercise/debug-tools/gtest/environment.h">
+			<Option target="exercise"/>
+		</Unit>
+		<Unit filename="/home/shiyang/exercise/debug-tools/valgrind/Helgrind_test.cc">
+			<Option target="exercise"/>
+		</Unit>
+		<Unit filename="/home/shiyang/exercise/debug-tools/valgrind/Memcheck_test.cc">
+			<Option target="exercise"/>
+		</Unit>
+		<Unit filename="/home/shiyang/exercise/debug-tools/valgrind/callgrind_test_part1.cc">
+			<Option target="exercise"/>
+		</Unit>
+		<Unit filename="/home/shiyang/exercise/debug-tools/valgrind/callgrind_test_part2.cc">
+			<Option target="exercise"/>
+		</Unit>
+		<Unit filename="/home/shiyang/exercise/design_pattern/strategy.cc">
+			<Option target="exercise"/>
+		</Unit>
+		<Unit filename="/home/shiyang/exercise/design_pattern/strategy.h">
+			<Option target="exercise"/>
+		</Unit>
+		<Unit filename="/home/shiyang/exercise/ipc/Util.h">
+			<Option target="exercise"/>
+		</Unit>
+		<Unit filename="/home/shiyang/exercise/ipc/posix_shm.cc">
+			<Option target="exercise"/>
+		</Unit>
+		<Unit filename="/home/shiyang/exercise/network/anon_mmap.c">
+			<Option target="exercise"/>
+		</Unit>
+		<Unit filename="/home/shiyang/exercise/network/client.c">
+			<Option target="exercise"/>
+		</Unit>
+		<Unit filename="/home/shiyang/exercise/network/eof.c">
+			<Option target="exercise"/>
+		</Unit>
+		<Unit filename="/home/shiyang/exercise/network/epoll.c">
+			<Option target="exercise"/>
+		</Unit>
+		<Unit filename="/home/shiyang/exercise/network/mmap.c">
+			<Option target="exercise"/>
+		</Unit>
+		<Unit filename="/home/shiyang/exercise/network/net.c">
+			<Option target="exercise"/>
+		</Unit>
+		<Unit filename="/home/shiyang/exercise/network/net.h">
+			<Option target="exercise"/>
+		</Unit>
+		<Unit filename="/home/shiyang/exercise/network/server.c">
+			<Option target="exercise"/>
+		</Unit>
+		<Unit filename="/home/shiyang/exercise/network/signalfd.c">
+			<Option target="exercise"/>
+		</Unit>
+		<Unit filename="/home/shiyang/exercise/network/sleep1.c">
+			<Option target="exercise"/>
+		</Unit>
+		<Unit filename="/home/shiyang/exercise/network/sync_using_signal.c">
+			<Option target="exercise"/>
+		</Unit>
+		<Unit filename="/home/shiyang/exercise/network/test.c">
+			<Option target="exercise"/>
+		</Unit>
+		<Unit filename="/home/shiyang/exercise/operating system/eventfd_test.c">
+			<Option target="exercise"/>
+		</Unit>
+		<Unit filename="/home/shiyang/exercise/operating system/signalfd_test.c">
+			<Option target="exercise"/>
+		</Unit>
+		<Unit filename="/home/shiyang/exercise/operating system/timerfd_test.c">
+			<Option target="exercise"/>
+		</Unit>
+		<Unit filename="/home/shiyang/exercise/template/partial-specialization.cc">
+			<Option target="exercise"/>
+		</Unit>
+		<Unit filename="/home/shiyang/exercise/template/specializion_of_a_class_member.cc">
+			<Option target="exercise"/>
+		</Unit>
+		<Unit filename="/home/shiyang/exercise/template/static_assert.cc">
+			<Option target="exercise"/>
+		</Unit>
+		<Unit filename="/home/shiyang/exercise/test.cc">
+			<Option target="exercise"/>
+		</Unit>
+		<Unit filename="/home/shiyang/exercise/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
