@@ -45,6 +45,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/exercise.dir/debug-tools/gtest/TEST_F.cc.o"
   "CMakeFiles/exercise.dir/debug-tools/gtest/TEST_P.cc.o"
   "CMakeFiles/exercise.dir/debug-tools/gtest/TYPED_TEST_P.cc.o"
+  "CMakeFiles/exercise.dir/debug-tools/gtest/_DEATH.cc.o"
   "exercise.pdb"
   "exercise"
 )

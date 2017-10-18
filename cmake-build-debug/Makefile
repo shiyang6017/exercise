@@ -690,6 +690,33 @@ debug-tools/gtest/TYPED_TEST_P.cc.s:
 	$(MAKE) -f CMakeFiles/exercise.dir/build.make CMakeFiles/exercise.dir/debug-tools/gtest/TYPED_TEST_P.cc.s
 .PHONY : debug-tools/gtest/TYPED_TEST_P.cc.s
 
+debug-tools/gtest/_DEATH.o: debug-tools/gtest/_DEATH.cc.o
+
+.PHONY : debug-tools/gtest/_DEATH.o
+
+# target to build an object file
+debug-tools/gtest/_DEATH.cc.o:
+	$(MAKE) -f CMakeFiles/exercise.dir/build.make CMakeFiles/exercise.dir/debug-tools/gtest/_DEATH.cc.o
+.PHONY : debug-tools/gtest/_DEATH.cc.o
+
+debug-tools/gtest/_DEATH.i: debug-tools/gtest/_DEATH.cc.i
+
+.PHONY : debug-tools/gtest/_DEATH.i
+
+# target to preprocess a source file
+debug-tools/gtest/_DEATH.cc.i:
+	$(MAKE) -f CMakeFiles/exercise.dir/build.make CMakeFiles/exercise.dir/debug-tools/gtest/_DEATH.cc.i
+.PHONY : debug-tools/gtest/_DEATH.cc.i
+
+debug-tools/gtest/_DEATH.s: debug-tools/gtest/_DEATH.cc.s
+
+.PHONY : debug-tools/gtest/_DEATH.s
+
+# target to generate assembly for a file
+debug-tools/gtest/_DEATH.cc.s:
+	$(MAKE) -f CMakeFiles/exercise.dir/build.make CMakeFiles/exercise.dir/debug-tools/gtest/_DEATH.cc.s
+.PHONY : debug-tools/gtest/_DEATH.cc.s
+
 debug-tools/gtest/assert.o: debug-tools/gtest/assert.cc.o
 
 .PHONY : debug-tools/gtest/assert.o
@@ -1437,6 +1464,9 @@ help:
 	@echo "... debug-tools/gtest/TYPED_TEST_P.o"
 	@echo "... debug-tools/gtest/TYPED_TEST_P.i"
 	@echo "... debug-tools/gtest/TYPED_TEST_P.s"
+	@echo "... debug-tools/gtest/_DEATH.o"
+	@echo "... debug-tools/gtest/_DEATH.i"
+	@echo "... debug-tools/gtest/_DEATH.s"
 	@echo "... debug-tools/gtest/assert.o"
 	@echo "... debug-tools/gtest/assert.i"
 	@echo "... debug-tools/gtest/assert.s"

@@ -149,6 +149,9 @@
 		<Unit filename="/home/shiyang/exercise/debug-tools/gtest/TYPED_TEST_P.cc">
 			<Option target="exercise"/>
 		</Unit>
+		<Unit filename="/home/shiyang/exercise/debug-tools/gtest/_DEATH.cc">
+			<Option target="exercise"/>
+		</Unit>
 		<Unit filename="/home/shiyang/exercise/debug-tools/gtest/assert.cc">
 			<Option target="exercise"/>
 		</Unit>
