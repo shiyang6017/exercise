@@ -63,6 +63,7 @@ void* func(void* ptr) {
 void checkPoint() {
     static int pointerCount = 0;
     std::cout << "point" << ++pointerCount << std::endl;
+    
 }
 
 int main() {
