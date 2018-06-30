@@ -1,0 +1,3 @@
+// c/c++的不同
+// gcc source.c main.c
+// g++ source.cc main.cc 
